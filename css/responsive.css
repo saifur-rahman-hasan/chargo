@@ -1,0 +1,432 @@
+/*------------------------------
+    PRELOADER
+-------------------------------*/
+
+.preeloader {
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.preloader-spinner {
+    -webkit-animation: 1s ease-out 0s normal none infinite running pulsate;
+    animation: 1s ease-out 0s normal none infinite running pulsate;
+    border-radius: 40px;
+    display: block;
+    height: 40px;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    width: 40px;
+    z-index: 10;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+
+/*----------------------------------
+    MEDIUM LAYOUT: 1280px
+-----------------------------------*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .area-title h2 {
+        letter-spacing: inherit;
+    }
+    .side-push-menu {
+        height: 80px;
+        padding-top: 35px;
+    }
+    .is-sticky .side-push-menu {
+        height: 60px;
+        padding-bottom: 20px;
+        padding-top: 17px;
+    }
+    /*--------------------------*/
+    .single-promo h3,
+    .product-name-and-specification,
+    .single-footer-widget h4 {
+        letter-spacing: inherit;
+    }
+    .flick-feed ul li a {
+        width: 90px;
+    }
+}
+
+
+/*----------------------------------
+    TABLET LAYOUT: 768px
+------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-padding {
+        padding: 80px 0;
+    }
+    .padding-top {
+        padding-top: 80px;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse,
+    .navbar-toggle {
+        display: block !important;
+    }
+    .navbar-header {
+        border-bottom: 1px solid #37a000;
+        float: none;
+        margin: 0;
+        padding: 15px 0;
+    }
+    .is-sticky .navbar-header {
+        margin-top: 0;
+        padding: 7px 0;
+    }
+    .navbar-brand {
+        margin-top: 8px;
+    }
+    ul#nav {
+        width: 100%;
+        max-height: 200px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    ul#nav li {
+        float: none;
+        padding: inherit;
+    }
+    .is-sticky ul#nav li {
+        padding: 0;
+    }
+    ul#nav li a,
+    .is-sticky ul#nav li a {
+        padding: 10px 15px;
+    }
+    ul#nav li a:hover,
+    ul#nav li.active a {
+        background: #37a000 none repeat scroll 0 0;
+        color: #fff;
+    }
+    ul#nav li a::after,
+    ul#nav li a::before {
+        display: none;
+    }
+    .side-push-menu {
+        position: absolute;
+        right: 41px;
+        top: -9px;
+        display: none;
+    }
+    .shoping-curt {
+        display: none;
+    }
+    /*-----------------*/
+    .top-area-bg {
+        height: 100%;
+    }
+    .area-title {
+        margin-bottom: 50px;
+    }
+    .welcome-text {
+        position: relative;
+        text-align: center;
+        z-index: 99;
+    }
+    .welcome-img {
+        opacity: 0.2;
+    }
+    .row.top-promo > .col-lg-3 {
+        padding: 0 15px;
+    }
+    .single-promo {
+        margin-bottom: 30px;
+    }
+    .about-content {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .about-flow-content img {
+        width: 100%;
+    }
+    .single-features {
+        margin-left: 15px;
+    }
+    .subscriber-area.section-padding {
+        padding: 100px 0;
+    }
+    .subscriber-bg-drone {
+        opacity: 0.5;
+        top: auto;
+    }
+    .footer-top-area.section-padding {
+        padding-bottom: 20px;
+    }
+    .single-footer-widget {
+        margin-bottom: 50px;
+    }
+    .footer-area .row > div:first-child h4::after,
+    .footer-area .row > div:first-child .single-footer-widget {
+        text-align: center;
+    }
+}
+
+
+/*----------------------------------
+    MOBILE LAYOUT: 320px
+-----------------------------------*/
+
+@media only screen and (max-width: 767px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+    .subscriber-area.section-padding {
+        padding: 50px 0;
+    }
+    .area-title {
+        margin-bottom: 50px;
+    }
+    .area-title h2 {
+        font-size: 28px;
+    }
+    .padding-top {
+        padding-top: 50px;
+    }
+    .navbar-header {
+        border-bottom: 1px solid #37a000;
+        margin: 0;
+        padding: 15px 0;
+    }
+    .navbar-brand {
+        margin-top: 8px;
+    }
+    .is-sticky .navbar-header {
+        margin-top: 0;
+        padding: 5px 0;
+    }
+    .navbar-collapse {
+        padding: 0;
+    }
+    ul#nav {
+        width: 100%;
+        max-height: 200px;
+        overflow: scroll;
+        overflow-x: hidden;
+        margin: 0;
+    }
+    ul#nav li {
+        float: none;
+        padding: inherit;
+    }
+    .is-sticky ul#nav li {
+        padding: 0;
+    }
+    .navbar-brand > img {
+        width: 90%;
+    }
+    .is-sticky .navbar-brand > img {
+        max-width: 90%;
+    }
+    .mainmenu-area {
+        background: #272727 none repeat scroll 0 0;
+    }
+    .is-sticky .mainmenu-area {
+        background: #272727 none repeat scroll 0 0;
+    }
+    ul#nav li a,
+    .is-sticky ul#nav li a {
+        color: #fff;
+        padding: 10px 15px;
+    }
+    ul#nav li a:hover,
+    ul#nav li.active a {
+        background: #37a000 none repeat scroll 0 0;
+        color: #fff;
+    }
+    ul#nav li a::after,
+    ul#nav li a::before {
+        display: none;
+    }
+    .side-push-menu {
+        position: absolute;
+        right: 41px;
+        top: -9px;
+        display: none;
+    }
+    .shoping-curt {
+        display: none;
+    }
+    /*-----------------*/
+    .top-area-bg {
+        height: 100%;
+    }
+    .area-title {
+        margin-bottom: 50px;
+    }
+    .welcome-text {
+        position: relative;
+        text-align: center;
+        z-index: 99;
+    }
+    .welcome-text h2 {
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+    .welcome-text h1 {
+        font-size: 35px;
+        letter-spacing: 0;
+        margin-bottom: 0;
+    }
+    .welcome-text p {
+        display: none;
+    }
+    .call-to-action a {
+        font-size: 16px;
+        margin: auto;
+    }
+    .welcome-img {
+        opacity: 0.2;
+    }
+    .row.top-promo > .col-lg-3 {
+        padding: 0 15px;
+    }
+    .single-promo {
+        margin-bottom: 30px;
+    }
+    .about-content {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .about-content h3 {
+        font-size: 24px;
+    }
+    .about-flow-menu ul li a {
+        height: 90px;
+        margin: 0;
+        width: 90px;
+    }
+    .about-flow-content img {
+        width: 100%;
+    }
+    .single-features {
+        margin-left: 15px;
+    }
+    .subscriber-area.section-padding {
+        padding: 100px 0;
+    }
+    .subscriber-bg-drone {
+        opacity: 0.5;
+        top: auto;
+    }
+    .subscriber-left-content h3,
+    .subscriber-left-content h2 {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+    .subscriber-form,
+    .subscriber-form label.mt10.error {
+        text-align: center;
+        width: 100%;
+    }
+    .subscriber-form p {
+        margin-bottom: 30px;
+    }
+    .subscriber-form form button {
+        padding: 10px;
+        width: auto;
+    }
+    .footer-top-area.section-padding {
+        padding-bottom: 20px;
+    }
+    .single-footer-widget {
+        margin-bottom: 50px;
+    }
+    .footer-area .row > div:first-child h4::after,
+    .footer-area .row > div:first-child .single-footer-widget {
+        text-align: center;
+    }
+    .flick-feed ul li a {
+        width: 85px;
+    }
+}
+
+
+/*----------------------------------
+    WIDE MOBILE LAYOUT: 480px
+-----------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+    .area-title h2 {
+        font-size: 30px;
+    }
+    .single-about h3,
+    .single-features h3 {
+        font-size: 24px;
+    }
+    ul#nav {
+        width: 100%;
+        max-height: 200px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    ul#nav li {
+        float: none;
+    }
+    .welcome-text h2 {
+        font-size: 30px;
+        letter-spacing: 0;
+    }
+    .welcome-text h1 {
+        font-size: 40px;
+        letter-spacing: 0;
+        margin-bottom: 0;
+    }
+    .call-to-action a {
+        font-size: 16px;
+        margin: auto;
+    }
+    .subscriber-left-content h3,
+    .subscriber-left-content h2 {
+        letter-spacing: 0;
+    }
+}
